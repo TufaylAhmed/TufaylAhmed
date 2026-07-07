@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tufail Ahmed Sheikh — Principal Security Architect</title>
+<meta name="description" content="Résumé of Tufail Ahmed Sheikh — Principal Security Architect specializing in SASE, Zero Trust (ZTNA), and enterprise network security.">
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --surface-2: #1c2331;
+    --border: #2d3748;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #36bcf7;
+    --accent-dim: #1f6feb33;
+    --grad: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
+
+  /* ── Hero ─────────────────────────── */
+  header {
+    background: var(--grad);
+    padding: 72px 24px 56px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 50% -20%, #36bcf722, transparent 60%);
+    pointer-events: none;
+  }
+  header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    animation: fadeUp .7s ease both;
+  }
+  header .role {
+    color: var(--accent);
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: 600;
+    margin-top: 8px;
+    animation: fadeUp .7s .15s ease both;
+  }
+  header .tagline {
+    color: #b9c6d3;
+    max-width: 560px;
+    margin: 14px auto 0;
+    font-size: .95rem;
+    animation: fadeUp .7s .25s ease both;
+  }
+  .contact {
+    display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+    margin-top: 26px;
+    animation: fadeUp .7s .35s ease both;
+  }
+  .contact a {
+    display: inline-flex; align-items: center; gap: 7px;
+    background: #ffffff14;
+    border: 1px solid #ffffff26;
+    color: var(--text);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: .85rem;
+    transition: background .2s, transform .2s, border-color .2s;
+    backdrop-filter: blur(6px);
+  }
+  .contact a:hover { background: #36bcf72e; border-color: var(--accent); transform: translateY(-2px); }
+
+  /* ── Sections ─────────────────────── */
+  section { margin-top: 56px; }
+  h2 {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: .18em;
+    color: var(--accent);
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 26px;
+  }
+  h2::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px;
+    padding: 24px 28px;
+    color: #c9d4de;
+    font-size: .98rem;
+  }
+  .summary p + p { margin-top: 12px; }
+  .summary strong { color: var(--text); }
+
+  /* ── Timeline ─────────────────────── */
+  .timeline { position: relative; padding-left: 28px; }
+  .timeline::before {
+    content: "";
+    position: absolute; left: 6px; top: 6px; bottom: 6px;
+    width: 2px;
+    background: linear-gradient(var(--accent), var(--border));
+  }
+  .job {
+    position: relative;
+    margin-bottom: 40px;
+    opacity: 0; transform: translateY(18px);
+    transition: opacity .6s ease, transform .6s ease;
+  }
+  .job.visible { opacity: 1; transform: none; }
+  .job::before {
+    content: "";
+    position: absolute; left: -28px; top: 8px;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 3px solid var(--accent);
+  }
+  .job-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; }
+  .job h3 { font-size: 1.12rem; font-weight: 700; }
+  .job .org { color: var(--accent); font-weight: 600; font-size: .95rem; }
+  .job .meta { color: var(--muted); font-size: .85rem; white-space: nowrap; }
+  .job ul { margin: 12px 0 0 18px; color: #c9d4de; font-size: .93rem; }
+  .job li { margin-bottom: 7px; }
+  .job li::marker { color: var(--accent); }
+
+  /* ── Skills ───────────────────────── */
+  .skill-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+  .skill-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    transition: border-color .25s, transform .25s;
+  }
+  .skill-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+  .skill-card h4 { font-size: .9rem; margin-bottom: 12px; color: var(--text); }
+  .tags { display: flex; flex-wrap: wrap; gap: 7px; }
+  .tag {
+    background: var(--accent-dim);
+    border: 1px solid #36bcf740;
+    color: #9fd8f5;
+    font-size: .76rem;
+    padding: 3px 11px;
+    border-radius: 999px;
+  }
+
+  /* ── Cards (education / courses) ──── */
+  .card-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .info-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 22px;
+  }
+  .info-card h3 { font-size: 1rem; }
+  .info-card .sub { color: var(--accent); font-size: .88rem; font-weight: 600; margin-top: 2px; }
+  .info-card .meta { color: var(--muted); font-size: .82rem; margin-top: 4px; }
+  .info-card ul { margin: 10px 0 0 18px; color: #c9d4de; font-size: .9rem; }
+  .info-card li { margin-bottom: 5px; }
+  .info-card li::marker { color: var(--accent); }
+
+  footer {
+    margin-top: 70px;
+    text-align: center;
+    color: var(--muted);
+    font-size: .82rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  .print-btn {
+    position: fixed; bottom: 24px; right: 24px;
+    background: var(--accent); color: #04121b;
+    border: none; border-radius: 999px;
+    padding: 12px 20px;
+    font-weight: 700; font-size: .85rem;
+    cursor: pointer;
+    box-shadow: 0 6px 20px #36bcf74d;
+    transition: transform .2s;
+  }
+  .print-btn:hover { transform: scale(1.06); }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: none; }
+  }
+
+  /* ── Print ────────────────────────── */
+  @media print {
+    :root { --bg: #fff; --surface: #fff; --surface-2: #fff; --border: #ccc; --text: #111; --muted: #555; --accent: #0b5e8a; --accent-dim: #e8f4fb; }
+    header { background: none; padding: 20px 0; color: #111; }
+    header .tagline { color: #444; }
+    .contact a { border: 1px solid #ccc; background: none; color: #111; }
+    .print-btn { display: none; }
+    .job, .skill-card, .info-card, .summary { break-inside: avoid; }
+    body { font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Tufail Ahmed Sheikh</h1>
+  <div class="role">Principal Security Architect — Network &amp; Security (SASE / Zero Trust)</div>
+  <p class="tagline">Designing and securing large-scale enterprise networks with SASE, ZTNA, and cloud-native security architectures.</p>
+  <div class="contact">
+    <a href="mailto:tufayl@outlook.com">✉️ tufayl@outlook.com</a>
+    <a href="tel:+919686633999">📞 +91 968-66-33-999</a>
+    <a href="https://linkedin.tufailahmedsheikh.com/" target="_blank" rel="noopener">💼 LinkedIn</a>
+    <a href="https://github.com/TufaylAhmed" target="_blank" rel="noopener">🐙 GitHub</a>
+    <a href="https://tufailahmedsheikh.com" target="_blank" rel="noopener">🌐 tufailahmedsheikh.com</a>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section id="summary">
+    <h2>Professional Summary</h2>
+    <div class="summary">
+      <p><strong>Principal Security Architect</strong> with deep expertise in designing and securing large-scale enterprise networks using <strong>SASE</strong>, <strong>Zero Trust (ZTNA)</strong>, and cloud-native security architectures. Trusted advisor to global organizations, specializing in building resilient, identity-driven access models and modernizing legacy network infrastructures.</p>
+      <p>Currently leading a strategic engagement with <strong>Ford Motor Company</strong> for the <strong>Blue Oval Michigan</strong> program, architecting and operating secure network access across manufacturing environments, defining access controls and driving end-to-end security design. Proven track record in delivering complex deployments, integrating multi-vendor technologies, and aligning security architecture with business and operational objectives.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>Principal Security Architect — Network &amp; Security (SASE / Zero Trust)</h3>
+            <div class="org">Independent Consultant · Ford Motor Company (Blue Oval Michigan)</div>
+          </div>
+          <div class="meta">Remote · Dec 2024 – Present</div>
+        </div>
+        <ul>
+          <li>Trusted advisor to enterprises on designing, securing, and operating resilient network infrastructures aligned with Zero Trust principles.</li>
+          <li>Leading a full-time strategic engagement with Ford Motor Company for Blue Oval Michigan, supporting the buildout of one of their largest battery manufacturing facilities.</li>
+          <li>Architected and implemented a Zero Trust Network Access (ZTNA) framework, defining identity-based access controls and secure connectivity across manufacturing environments.</li>
+          <li>Own end-to-end design and operations for manufacturing site access, including policy definition for "who gets what access," ensuring security, compliance, and operational continuity.</li>
+          <li>Lead architecture and deployment of Palo Alto Networks solutions: Prisma Access, IoT Security, XSOAR, and Strata Cloud Manager (SCM).</li>
+          <li>Drive enterprise-wide network security strategy combining SASE, cloud security, and on-prem infrastructure into a unified, scalable model.</li>
+          <li>Primary point of accountability for design and operations, ensuring high availability, security posture, and performance across critical environments.</li>
+          <li>Lead solution validation, PoCs, and real-world implementations; develop architecture standards, governance models, and deployment frameworks for secure scaling across sites.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>Head of Network Operations / SASE Product Head (India)</h3>
+            <div class="org">Extreme Networks</div>
+          </div>
+          <div class="meta">Remote · Jul 2017 – Dec 2024</div>
+        </div>
+        <ul>
+          <li>Served as Acting Head of Networking, leading end-to-end network strategy, operations, and infrastructure management across global environments.</li>
+          <li>Key contributor to <strong>Universal ZTNA</strong> — architecture, integrations, and building a complete SASE framework.</li>
+          <li>Led testing and deployment initiatives for SASE solutions across Asia, briefing regional teams and driving phased rollouts.</li>
+          <li>SME for R&amp;D, driving Proof of Concepts for SASE solutions to validate new features and deployment strategies.</li>
+          <li>Designed and deployed SASE architectures integrating SD-WAN, cloud security, and identity-based controls.</li>
+          <li>Built enterprise transition frameworks from legacy VPN to ZTNA, improving security posture and user experience.</li>
+          <li>Led customer-facing PoCs and solution validation for Fortune 500 clients; provided technical leadership for cloud security transformation initiatives.</li>
+          <li>Built and managed data centers — full-stack infrastructure including networking, security systems, switching, facilities, CCTV, and access control (HID).</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>Network Engineer</h3>
+            <div class="org">Ruckus Wireless Deployments</div>
+          </div>
+          <div class="meta">Bengaluru, India · Feb 2016 – Jul 2017</div>
+        </div>
+        <ul>
+          <li>Designed and implemented wireless networks using Ruckus wireless technology for various clients.</li>
+          <li>Configured and troubleshot Ruckus Access Points, controllers, and network devices using Zone Director and SmartZone.</li>
+          <li>Participated in site surveys for wireless network design; implemented WPA2-Enterprise and other wireless security measures.</li>
+          <li>Worked with cross-functional teams to resolve network issues, trained clients, and maintained accurate configuration documentation.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div>
+            <h3>IT Analyst Engineer</h3>
+            <div class="org">Cisco (Internal Infrastructure)</div>
+          </div>
+          <div class="meta">Bengaluru, India · May 2014 – Oct 2015</div>
+        </div>
+        <ul>
+          <li>Hands-on experience with enterprise-grade internal infrastructure and networking technologies within Cisco.</li>
+          <li>Supported and troubleshot Cisco ASA VPN environments — remote access configuration, user authentication, and secure connectivity.</li>
+          <li>Administered Cisco Unified Communications platforms including IP Telephony; engineered and supported Webex and Telepresence solutions.</li>
+          <li>Developed technical documentation, runbooks, and operational procedures aligned with enterprise standards.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Core Skills</h2>
+    <div class="skill-groups">
+      <div class="skill-card">
+        <h4>🛡️ Security Architecture</h4>
+        <div class="tags">
+          <span class="tag">SASE</span><span class="tag">Zero Trust / ZTNA</span><span class="tag">Cloud Security</span><span class="tag">IoT Security</span><span class="tag">Identity-Driven Access</span><span class="tag">VPN → ZTNA Migration</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>🔥 Palo Alto Networks</h4>
+        <div class="tags">
+          <span class="tag">Prisma Access</span><span class="tag">Cortex XSOAR</span><span class="tag">Strata Cloud Manager</span><span class="tag">PAN IoT Security</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>🌐 Networking</h4>
+        <div class="tags">
+          <span class="tag">SD-WAN</span><span class="tag">Cisco ASA / VPN</span><span class="tag">Extreme Networks</span><span class="tag">Ruckus Wireless</span><span class="tag">Routing &amp; Switching</span><span class="tag">Enterprise Wi-Fi</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4>🏗️ Infrastructure &amp; Leadership</h4>
+        <div class="tags">
+          <span class="tag">Data Center Design</span><span class="tag">High Availability</span><span class="tag">PoC Leadership</span><span class="tag">Architecture Governance</span><span class="tag">Stakeholder Management</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education &amp; Courses</h2>
+    <div class="card-row">
+      <div class="info-card">
+        <h3>Bachelor of Technology</h3>
+        <div class="sub">Computer Science Engineering</div>
+        <div class="meta">Lovely Professional University (LPU), India · 2009 – 2013</div>
+      </div>
+      <div class="info-card">
+        <h3>Recent Courses &amp; Certifications</h3>
+        <ul>
+          <li>NVIDIA AI Technical Curriculum (2025)</li>
+          <li>NVIDIA DGX AI Compute Systems &amp; DGX Cloud Curriculum (2025)</li>
+          <li>NVIDIA Networking &amp; Compute Technical Curriculum (2025)</li>
+          <li>Extreme Networks Cloud Engineer</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Tufail Ahmed Sheikh · <a href="https://github.com/TufaylAhmed">github.com/TufaylAhmed</a> · <a href="https://tufailahmedsheikh.com">tufailahmedsheikh.com</a></p>
+  </footer>
+
+</div>
+
+<button class="print-btn" onclick="window.print()">🖨️ Print / Save PDF</button>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.job').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
