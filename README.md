@@ -1,10 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=210&section=header&text=Tufail%20Ahmed%20Sheikh&fontSize=46&fontColor=ffffff&fontAlignY=36&desc=Principal%20Security%20Architect%20%7C%20SASE%20%7C%20Zero%20Trust%20%7C%20Network%20Security&descSize=17&descAlignY=56&color=0:0f2027,50:203a43,100:2c5364" width="100%" alt="banner"/>
-
-<a href="https://github.com/TufaylAhmed">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&height=50&lines=Principal+Security+Architect;SASE+%26+Zero+Trust+%28ZTNA%29+Specialist;Securing+Enterprise+%26+Manufacturing+Networks;Palo+Alto+Networks+%7C+Prisma+Access+%7C+XSOAR;Engineer+learning+something+every+day+%F0%9F%9A%80" alt="Typing SVG" />
-</a>
+<img src="assets/header.svg" width="100%" alt="Tufail Ahmed Sheikh — Principal Security Architect"/>
 
 <br/>
 

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="240" viewBox="0 0 1000 240" role="img" aria-label="Tufail Ahmed Sheikh — Principal Security Architect">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2027"/>
+      <stop offset="50%" stop-color="#203a43"/>
+      <stop offset="100%" stop-color="#2c5364"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#36bcf7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#36bcf7"/>
+      <stop offset="100%" stop-color="#36bcf7" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="240" fill="url(#bg)" rx="10"/>
+
+  <!-- drifting waves; static frame is fully legible -->
+  <g opacity="0.35">
+    <path fill="#36bcf7" opacity="0.25" d="M0,190 C125,165 250,215 375,190 C500,165 625,215 750,190 C875,165 1000,215 1125,190 C1250,165 1375,215 1500,190 L1500,240 L0,240 Z">
+      <animateTransform attributeName="transform" type="translate" values="0,0;-500,0;0,0" dur="14s" repeatCount="indefinite"/>
+    </path>
+    <path fill="#8be9fd" opacity="0.18" d="M0,205 C125,185 250,225 375,205 C500,185 625,225 750,205 C875,185 1000,225 1125,205 C1250,185 1375,225 1500,205 L1500,240 L0,240 Z">
+      <animateTransform attributeName="transform" type="translate" values="-500,0;0,0;-500,0" dur="18s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- static, always-visible text -->
+  <text x="500" y="92" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="1">Tufail Ahmed Sheikh</text>
+
+  <rect x="330" y="112" width="340" height="3" fill="url(#accent)" rx="1.5">
+    <animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- rotating roles; first line visible at frame 0 -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="500" text-anchor="middle">
+    <text x="500" y="150" fill="#9fd8f5">Principal Security Architect — SASE | Zero Trust | Network Security
+      <animate attributeName="opacity" values="1;1;1;0;0;0;0;0;1" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="500" y="150" fill="#9fd8f5" opacity="0">Securing Enterprise &amp; Manufacturing Networks at Scale
+      <animate attributeName="opacity" values="0;0;0;1;1;0;0;0;0" dur="12s" repeatCount="indefinite"/>
+    </text>
+    <text x="500" y="150" fill="#9fd8f5" opacity="0">Palo Alto Networks | Prisma Access | XSOAR | Strata Cloud Manager
+      <animate attributeName="opacity" values="0;0;0;0;0;1;1;0;0" dur="12s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>
