@@ -9,7 +9,7 @@
 <a href="https://tufailahmedsheikh.com"><img src="https://img.shields.io/badge/Website-tufailahmedsheikh.com-2c5364?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/></a>
 <a href="https://tufaylahmed.github.io/TufaylAhmed/"><img src="https://img.shields.io/badge/R%C3%A9sum%C3%A9-View%20Online-36BCF7?style=for-the-badge&logo=readdotcv&logoColor=white" alt="Resume"/></a>
 
-<img src="https://komarev.com/ghpvc/?username=TufaylAhmed&style=for-the-badge&color=36BCF7" alt="Profile views"/>
+<img src="https://hits.sh/github.com/TufaylAhmed.svg?style=for-the-badge&label=Profile%20views&color=36BCF7" alt="Profile views"/>
 
 </div>
 
@@ -59,7 +59,7 @@ Currently, I'm leading a strategic engagement with **Ford Motor Company** for th
 
 <div align="center">
 
-<a href="https://github.com/TufaylAhmed"><img src="https://github-readme-activity-graph.vercel.app/graph?username=TufaylAhmed&theme=tokyo-night&hide_border=true&area=true" alt="activity graph" width="100%"/></a>
+<a href="https://github.com/TufaylAhmed"><img src="https://activity-graph.vercel.app/graph?username=TufaylAhmed&theme=tokyo-night&hide_border=true&area=true" alt="activity graph" width="100%"/></a>
 
 </div>
 
