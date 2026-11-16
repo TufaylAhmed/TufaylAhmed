@@ -6,7 +6,7 @@
 
 <a href="https://linkedin.tufailahmedsheikh.com/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="mailto:tufayl@outlook.com"><img src="https://img.shields.io/badge/Email-tufayl%40outlook.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-<a href="https://tufailahmedsheikh.com"><img src="https://img.shields.io/badge/Website-tufailahmedsheikh.com-2c5364?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/></a>
+<a href="https://tufaylahmed.com"><img src="https://img.shields.io/badge/Website-tufaylahmed.com-2c5364?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/></a>
 <a href="https://tufaylahmed.github.io/TufaylAhmed/"><img src="https://img.shields.io/badge/R%C3%A9sum%C3%A9-View%20Online-36BCF7?style=for-the-badge&logo=readdotcv&logoColor=white" alt="Resume"/></a>
 
 <img src="https://hits.sh/github.com/TufaylAhmed.svg?style=for-the-badge&label=Profile%20views&color=36BCF7" alt="Profile views"/>
